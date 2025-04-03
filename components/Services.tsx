@@ -15,20 +15,26 @@ export const Services = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center gap-10 py-8">
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
-          {bristolMyersSquibb}
-          {philips}
-          {vodafone}
-          {nasa}
-          {accenture}
-          {db}
-          {warnerMusic}
-          {moderna}
-          {trello}
-          {hp}
-          {wharton}
-          {warnerBros}
+      <div className="flex flex-wrap justify-center items-center gap-6 py-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {[
+            bristolMyersSquibb,
+            philips,
+            vodafone,
+            nasa,
+            accenture,
+            db,
+            warnerMusic,
+            moderna,
+            trello,
+            hp,
+            wharton,
+            warnerBros,
+          ].map((logo, index) => (
+            <div key={index} className="flex justify-center items-center">
+              {logo}
+            </div>
+          ))}
         </div>
       </div>
     </section>
