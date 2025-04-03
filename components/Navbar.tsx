@@ -19,7 +19,7 @@ import {
 
 export const Navbar = () => {
   return (
-    <nav className="h-16 w-screen flex justify-between items-center px-6 md:px-16">
+    <nav className="fixed md:static top-0 left-0 w-full h-16 z-50 flex justify-between items-center px-6 md:px-16 bg-white shadow-md">
       <div className="flex items-center gap-2">
         <svg
           width="30"
