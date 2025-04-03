@@ -1,3 +1,4 @@
+import { CustomersSay } from "@/components/CustomersSay";
 import { HeroSection } from "@/components/HeroSection";
 import { KeyFeatures } from "@/components/KeyFeatures";
 import { Navbar } from "@/components/Navbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <KeyFeatures />
       <WhyShieldSync />
+      <CustomersSay />
     </div>
   );
 }
