@@ -1,9 +1,18 @@
 import { Button } from "./ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
+import { Menu } from "lucide-react";
 
 export const Navbar = () => {
   return (
-    <nav className="h-16 w-screen flex justify-evenly items-center gap-48">
-      <div className="flex justify-center items-center gap-2">
+    <nav className="h-16 w-screen flex justify-between items-center px-6 md:px-16">
+      <div className="flex items-center gap-2">
         <svg
           width="30"
           height="30"
@@ -25,7 +34,8 @@ export const Navbar = () => {
         </svg>
         <span className="text-[1.375rem]">ShieldSync</span>
       </div>
-      <div className="flex justify-evenly items-center">
+
+      <div className="hidden md:flex gap-6">
         <Button variant="ghost" className="font-normal">
           Features
         </Button>
@@ -33,10 +43,43 @@ export const Navbar = () => {
         <Button variant="ghost">Pricing</Button>
         <Button variant="ghost">FAQ</Button>
       </div>
-      <div className="">
+
+      <div className="hidden md:flex gap-4">
         <Button variant="ghost">Login</Button>
-        <Button className="bg-[#0F0E47]">Start Free Trial</Button>
+        <Button className="bg-[#0F0E47] text-white">Start Free Trial</Button>
       </div>
+
+      <Sheet>
+        <SheetTrigger className="md:hidden">
+          <Menu size={28} />
+        </SheetTrigger>
+        <SheetContent side="left">
+          <SheetHeader>
+            <SheetTitle>Navigation</SheetTitle>
+            <SheetDescription>Explore ShieldSync</SheetDescription>
+          </SheetHeader>
+          <div className="flex flex-col gap-4 mt-6">
+            <Button variant="ghost" className="w-full">
+              Features
+            </Button>
+            <Button variant="ghost" className="w-full">
+              Solutions
+            </Button>
+            <Button variant="ghost" className="w-full">
+              Pricing
+            </Button>
+            <Button variant="ghost" className="w-full">
+              FAQ
+            </Button>
+            <Button variant="ghost" className="w-full">
+              Login
+            </Button>
+            <Button className="bg-[#0F0E47] text-white w-full">
+              Start Free Trial
+            </Button>
+          </div>
+        </SheetContent>
+      </Sheet>
     </nav>
   );
 };
