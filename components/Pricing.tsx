@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 export const Pricing = () => {
   return (
-    <div className="h-[42rem]">
+    <div className="pb-8">
       <div>
         <h2 className="text-center font-normal text-[#0F0E47] text-4xl py-12">
           Simple, Transparent Pricing
@@ -24,7 +24,7 @@ export const Pricing = () => {
           </TabsList>
           <TabsContent
             value="monthly"
-            className="w-full flex justify-evenly items-center pt-4"
+            className="w-full flex justify-evenly items-center pt-4 flex-wrap gap-4 lg:gap-0"
           >
             {pricingPlans.map((plan, index) => (
               <PricingCard
@@ -40,9 +40,9 @@ export const Pricing = () => {
           </TabsContent>
           <TabsContent
             value="annual"
-            className="w-full flex justify-evenly items-center pt-4"
+            className="w-full flex justify-evenly items-center pt-4 flex-wrap gap-4 lg:gap-0"
           >
-            {pricingPlans.map((plan, index) => (
+            {pricingPlansAnnual.map((plan, index) => (
               <PricingCard
                 key={index}
                 title={plan.title}
@@ -168,6 +168,33 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     title: "MSP Plan",
+    price: "Custom",
+    features: ["Unlimited Storage", "24/7 Support", "Custom Features"],
+    buttonText: "Contact Sales",
+    isPopular: false,
+    pricingType: "custom",
+  },
+];
+
+const pricingPlansAnnual: PricingPlan[] = [
+  {
+    title: "Free Tier",
+    price: "$0",
+    features: ["5GB Storage", "Basic Support", "1 Cloud Provider"],
+    buttonText: "Get Started",
+    isPopular: false,
+    pricingType: "yearly",
+  },
+  {
+    title: "Basic Plan",
+    price: "$400",
+    features: ["100GB Storage", "Priority Support", "All Cloud Providers"],
+    buttonText: "Start Free Trial",
+    isPopular: true,
+    pricingType: "yearly",
+  },
+  {
+    title: "Pro Plan",
     price: "Custom",
     features: ["Unlimited Storage", "24/7 Support", "Custom Features"],
     buttonText: "Contact Sales",
