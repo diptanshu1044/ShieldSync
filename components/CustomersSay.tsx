@@ -67,7 +67,9 @@ const CustomerCard = ({ image, name, role, review }: CustomerCardProps) => {
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-[#4B5563] text-sm leading-relaxed">"{review}"</p>
+        <p className="text-[#4B5563] text-sm leading-relaxed">
+          &quot;{review}&quot;
+        </p>
       </CardContent>
     </Card>
   );

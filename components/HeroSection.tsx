@@ -82,7 +82,7 @@ export const HeroSection = () => {
             </p>
             <div className="mt-4 p-2 bg-white text-black rounded-full shadow text-center">
               <p className="font-semibold">
-                N2WS' server belongs to you—it's not shared
+                N2WS&apos; server belongs to you—it&apos;s not shared
               </p>
             </div>
             <div className="mt-4 flex justify-center sm:justify-between gap-4">

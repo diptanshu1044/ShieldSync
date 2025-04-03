@@ -1,4 +1,4 @@
-export const ShieldSyncLogo = (props: React.SVGProps<SVGSVGElement>) => (
+export const ShieldSyncLogo = () => (
   <svg
     width="24"
     height="24"
