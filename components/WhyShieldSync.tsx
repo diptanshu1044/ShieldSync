@@ -7,6 +7,7 @@ interface WhyShieldSyncData {
   description: string;
   Icon: ElementType;
 }
+
 const data: WhyShieldSyncData[] = [
   {
     title: "100% Automated Cloud Storage Backup",
@@ -27,25 +28,31 @@ const data: WhyShieldSyncData[] = [
 
 export const WhyShieldSync = () => {
   const progress = 65;
+
   return (
-    <div className="w-full h-[30rem] p-20">
+    <div className="w-full h-auto p-10 md:p-20">
       <div className="flex flex-col">
-        <h2 className="text-center text-4xl text-[#0F0E47]">Why ShieldSync?</h2>
-        <div className="flex">
-          <div className="w-1/2">
-            {data.map((data, index) => (
-              <div className="flex px-4 py-3" key={index}>
-                {data.Icon && <data.Icon className="" />}
-                <div className="flex flex-col gap-2 px-2">
-                  <span>{data.title}</span>
-                  <span>{data.description}</span>
+        <h2 className="text-center text-3xl md:text-4xl text-[#0F0E47] mb-6">
+          Why ShieldSync?
+        </h2>
+        <div className="flex flex-wrap md:flex-nowrap gap-8">
+          {/* Features List */}
+          <div className="w-full md:w-1/2">
+            {data.map((item, index) => (
+              <div className="flex px-4 py-3 items-center" key={index}>
+                <item.Icon className="w-8 h-8 text-[#0F0E47]" />
+                <div className="flex flex-col gap-1 px-3">
+                  <span className="text-lg font-medium">{item.title}</span>
+                  <span className="text-sm text-gray-600">
+                    {item.description}
+                  </span>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="py-20 px-4 w-1/2">
-            <div className="p-8 bg-gray-100 rounded-xl shadow-sm">
+          <div className="w-full md:w-1/2">
+            <div className="p-6 bg-gray-100 rounded-xl shadow-sm">
               <div className="p-4 bg-white rounded-lg shadow-md">
                 <div className="flex justify-between text-sm text-gray-600">
                   <span className="font-medium">Backup Status</span>
