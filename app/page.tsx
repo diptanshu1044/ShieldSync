@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { KeyFeatures } from "@/components/KeyFeatures";
 import { Navbar } from "@/components/Navbar";
 import { Services } from "@/components/Services";
+import { WhyShieldSync } from "@/components/WhyShieldSync";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <Services />
       <KeyFeatures />
+      <WhyShieldSync />
     </div>
   );
 }
