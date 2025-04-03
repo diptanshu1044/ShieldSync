@@ -1,5 +1,6 @@
 import { CustomersSay } from "@/components/CustomersSay";
 import { FAQ } from "@/components/FAQ";
+import { FooterComponent } from "@/components/FooterComponent";
 import { HeroSection } from "@/components/HeroSection";
 import { KeyFeatures } from "@/components/KeyFeatures";
 import { Navbar } from "@/components/Navbar";
@@ -10,7 +11,7 @@ import { WhyShieldSync } from "@/components/WhyShieldSync";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <Services />
@@ -20,6 +21,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <PreFooterCTA />
+      <FooterComponent />
     </div>
   );
 }
