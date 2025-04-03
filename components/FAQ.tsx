@@ -33,7 +33,7 @@ const FaqAccordion = ({ value, title, description }: FaqAccordionProps) => {
     <Accordion
       type="single"
       collapsible
-      className="w-full max-w-3xl mx-auto bg-white px-4 py-3 rounded-lg"
+      className="w-full max-w-[55rem] mx-auto bg-white px-4 py-3 rounded-lg"
     >
       <AccordionItem value={value}>
         <AccordionTrigger className="text-[#0F0E47]">{title}</AccordionTrigger>
