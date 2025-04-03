@@ -23,13 +23,13 @@ const features = [
 
 export const KeyFeatures = () => {
   return (
-    <div className="bg-[#F4F6FA] h-[25rem] w-full">
+    <div className="bg-[#F4F6FA]  w-full pb-8">
       <h4 className="text-[#0F0E47] font-normal text-4xl text-center pt-8 py-16">
         Key Features
       </h4>
 
       {/* Feature Cards */}
-      <div className="flex justify-center gap-8">
+      <div className="flex justify-center gap-8 flex-wrap">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
         ))}
