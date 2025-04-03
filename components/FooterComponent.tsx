@@ -102,9 +102,9 @@ export const FooterComponent = ({
             ))}
           </FooterContent>
 
-          <Separator className="mt-4 text-gray-500 bg-gray-500" />
+          <Separator className="mt-4 bg-gray-500" />
           <FooterBottom>
-            <h5 className="text-center w-full">{copyright}</h5>
+            <h5 className="text-center w-full text-[#9CA3AF]">{copyright}</h5>
             {/* {policies && ( */}
             {/*   <div className="flex items-center gap-4"> */}
             {/*     {policies.map((policy, index) => ( */}
