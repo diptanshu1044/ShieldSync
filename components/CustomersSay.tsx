@@ -62,12 +62,12 @@ const CustomerCard = ({ image, name, role, review }: CustomerCardProps) => {
           </AvatarFallback>
         </Avatar>
         <div>
-          <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
-          <p className="text-sm text-gray-500">{role}</p>
+          <h3 className="text-lg text-[#0F0E47] font-normal">{name}</h3>
+          <p className="text-sm text-[#4B5563]">{role}</p>
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-gray-700 text-sm leading-relaxed">"{review}"</p>
+        <p className="text-[#4B5563] text-sm leading-relaxed">"{review}"</p>
       </CardContent>
     </Card>
   );
