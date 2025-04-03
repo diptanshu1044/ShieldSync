@@ -35,7 +35,7 @@ export const CustomersSay = () => {
         What Our Customers Say
       </h2>
 
-      <div className="flex justify-evenly items-center">
+      <div className="flex justify-evenly items-center flex-wrap gap-4">
         {customerReviews.map((customer, index) => (
           <CustomerCard {...customer} key={index} />
         ))}
