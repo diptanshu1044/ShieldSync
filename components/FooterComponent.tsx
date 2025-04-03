@@ -1,4 +1,3 @@
-import { ModeToggle } from "@/components/ui/mode-toggle";
 import {
   Footer,
   FooterColumn,
@@ -58,11 +57,6 @@ export const FooterComponent = ({
     },
   ],
   copyright = "© 2025 ShieldSync. All rights reserved.",
-  // policies = [
-  //   { text: "Privacy Policy", href: "https://www.launchuicomponents.com/" },
-  //   { text: "Terms of Service", href: "https://www.launchuicomponents.com/" },
-  // ],
-  showModeToggle = false,
 }: FooterProps) => {
   return (
     <footer className="bg-[#0F0E47] w-full px-4">
@@ -105,16 +99,6 @@ export const FooterComponent = ({
           <Separator className="mt-4 bg-gray-500" />
           <FooterBottom>
             <h5 className="text-center w-full text-[#9CA3AF]">{copyright}</h5>
-            {/* {policies && ( */}
-            {/*   <div className="flex items-center gap-4"> */}
-            {/*     {policies.map((policy, index) => ( */}
-            {/*       <a key={index} href={policy.href}> */}
-            {/*         {policy.text} */}
-            {/*       </a> */}
-            {/*     ))} */}
-            {/*     {showModeToggle && <ModeToggle />} */}
-            {/*   </div> */}
-            {/* )} */}
           </FooterBottom>
         </Footer>
       </div>
