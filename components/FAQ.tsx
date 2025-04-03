@@ -7,7 +7,7 @@ import {
 
 export const FAQ = () => {
   return (
-    <div className="w-full h-[35rem] bg-[#F4F6FA] p-20">
+    <div className="w-full bg-[#F4F6FA] p-20">
       <div className="flex flex-col ">
         <h2 className="text-center text-[#0F0E47] font-normal text-4xl pb-8">
           Frequently Asked Questions
