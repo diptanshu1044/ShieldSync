@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { Separator } from "./ui/separator";
 import {
   Sheet,
   SheetContent,
@@ -8,6 +9,13 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { Menu } from "lucide-react";
+import {
+  Wrench,
+  Lightbulb,
+  BadgeDollarSign,
+  HelpCircle,
+  LogIn,
+} from "lucide-react";
 
 export const Navbar = () => {
   return (
@@ -58,23 +66,29 @@ export const Navbar = () => {
             <SheetTitle>Navigation</SheetTitle>
             <SheetDescription>Explore ShieldSync</SheetDescription>
           </SheetHeader>
-          <div className="flex flex-col gap-4 mt-6">
-            <Button variant="ghost" className="w-full">
+          <Separator />
+          <div className="flex flex-col gap-2 items-start">
+            <Button variant="ghost">
+              <Wrench className="w-4 h-4 mr-2" />
               Features
             </Button>
-            <Button variant="ghost" className="w-full">
+            <Button variant="ghost">
+              <Lightbulb className="w-4 h-4 mr-2" />
               Solutions
             </Button>
-            <Button variant="ghost" className="w-full">
+            <Button variant="ghost">
+              <BadgeDollarSign className="w-4 h-4 mr-2" />
               Pricing
             </Button>
-            <Button variant="ghost" className="w-full">
+            <Button variant="ghost">
+              <HelpCircle className="w-4 h-4 mr-2" />
               FAQ
             </Button>
-            <Button variant="ghost" className="w-full">
+            <Button variant="ghost">
+              <LogIn className="w-4 h-4 mr-2" />
               Login
             </Button>
-            <Button className="bg-[#0F0E47] text-white w-full">
+            <Button className="bg-[#0F0E47] text-white mx-auto my-2">
               Start Free Trial
             </Button>
           </div>
