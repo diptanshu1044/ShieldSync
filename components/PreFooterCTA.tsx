@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export const PreFooterCTA = () => {
   return (
-    <div className=" w-full p-20">
+    <div className=" w-full p-8 md:p-12">
       <div className="flex flex-col">
         <h2 className="text-center text-4xl text-[#0F0E47]">
           Start Protecting Your Cloud Data Today

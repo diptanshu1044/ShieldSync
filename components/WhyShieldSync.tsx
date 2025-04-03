@@ -30,7 +30,7 @@ export const WhyShieldSync = () => {
   const progress = 65;
 
   return (
-    <div className="w-full h-auto p-10 md:p-20">
+    <div className="w-full h-auto px-4 sm:px-10 py-8 sm:py-10 md:p-20">
       <div className="flex flex-col">
         <h2 className="text-center text-3xl md:text-4xl text-[#0F0E47] mb-6">
           Why ShieldSync?

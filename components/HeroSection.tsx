@@ -6,7 +6,7 @@ import { Logo4 } from "./logos/Logo4";
 
 export const HeroSection = () => {
   return (
-    <main className="bg-[#F4F6FA] flex justify-center px-6 sm:px-12 lg:px-20 py-10">
+    <main className="bg-[#F4F6FA] flex justify-center px-4 sm:px-12 lg:px-20 py-10">
       <div className="w-full max-w-7xl">
         <div className="px-4 text-center">
           <h1 className="relative z-10 mx-auto max-w-4xl text-xl font-bold text-[#0F0E47] sm:text-3xl lg:text-5xl dark:text-slate-300">

@@ -30,7 +30,7 @@ const customerReviews: CustomerReview[] = [
 
 export const CustomersSay = () => {
   return (
-    <div className="bg-[#F4F6FA] px-20 py-12">
+    <div className="bg-[#F4F6FA] px-4 sm:px-8 md:px-20 py-8 md:py-12">
       <h2 className="text-center text-[#0F0E47] text-4xl pb-12">
         What Our Customers Say
       </h2>
@@ -53,21 +53,23 @@ interface CustomerCardProps {
 
 const CustomerCard = ({ image, name, role, review }: CustomerCardProps) => {
   return (
-    <Card className="p-4  rounded-xl  bg-white max-w-sm shadow-none border-0 h-[15rem]">
-      <CardHeader className="flex items-center gap-4">
-        <Avatar className="w-12 h-12">
+    <Card className="p-3 sm:p-4 rounded-xl bg-white w-full max-w-sm shadow-none border-0 min-h-[12rem] h-auto">
+      <CardHeader className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 p-2 sm:p-4">
+        <Avatar className="w-10 h-10 sm:w-12 sm:h-12">
           <AvatarImage src={image} alt={name} className="object-cover" />
           <AvatarFallback className="bg-gray-300 text-white font-semibold">
             {name[0]}
           </AvatarFallback>
         </Avatar>
         <div>
-          <h3 className="text-lg text-[#0F0E47] font-normal">{name}</h3>
-          <p className="text-sm text-[#4B5563]">{role}</p>
+          <h3 className="text-base sm:text-lg text-[#0F0E47] font-normal">
+            {name}
+          </h3>
+          <p className="text-xs sm:text-sm text-[#4B5563]">{role}</p>
         </div>
       </CardHeader>
-      <CardContent>
-        <p className="text-[#4B5563] text-sm leading-relaxed">
+      <CardContent className="p-2 sm:p-4 pt-0 sm:pt-0">
+        <p className="text-[#4B5563] text-xs sm:text-sm leading-relaxed">
           &quot;{review}&quot;
         </p>
       </CardContent>

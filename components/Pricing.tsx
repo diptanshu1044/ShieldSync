@@ -5,16 +5,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 export const Pricing = () => {
   return (
-    <div className="pb-8">
+    <div className="px-4 sm:px-8 md:px-12 py-4 sm:py-6 md:py-12">
       <div>
-        <h2 className="text-center font-normal text-[#0F0E47] text-4xl py-12">
+        <h2 className="text-center font-normal text-[#0F0E47] text-3xl sm:text-4xl py-6 md:py-12">
           Simple, Transparent Pricing
         </h2>
         <Tabs
           defaultValue="monthly"
           className="w-full mx-auto text-center flex flex-col items-center"
         >
-          <TabsList className="bg-[#F4F6FA] h-12 mb-8">
+          <TabsList className="bg-[#F4F6FA] h-12 mb-4 md:mb-8">
             <TabsTrigger value="monthly" className="text-[#0F0E47] px-4 py-2">
               Monthly
             </TabsTrigger>

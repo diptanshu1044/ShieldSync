@@ -23,8 +23,8 @@ const features = [
 
 export const KeyFeatures = () => {
   return (
-    <div className="bg-[#F4F6FA]  w-full pb-8">
-      <h4 className="text-[#0F0E47] font-normal text-4xl text-center pt-8 py-16">
+    <div className="bg-[#F4F6FA]  w-full py-8 md:py-12 px-4 sm:px-8 md:px-12">
+      <h4 className="text-[#0F0E47] font-normal text-4xl text-center pt-4 md:pt-8 py-6 md:py-16">
         Key Features
       </h4>
 
