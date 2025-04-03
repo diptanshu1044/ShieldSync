@@ -16,7 +16,7 @@ export const Services = () => {
       </div>
 
       <div className="flex flex-wrap justify-center items-center gap-6 py-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {[
             bristolMyersSquibb,
             philips,
@@ -31,7 +31,10 @@ export const Services = () => {
             wharton,
             warnerBros,
           ].map((logo, index) => (
-            <div key={index} className="flex justify-center items-center">
+            <div
+              key={index}
+              className="flex justify-center items-center w-full"
+            >
               {logo}
             </div>
           ))}
@@ -44,12 +47,12 @@ export const Services = () => {
 // Styled SVGs with better proportions and balance
 const bristolMyersSquibb = (
   <svg
-    width="140"
+    width="250"
     height="50"
     viewBox="0 0 140 50"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <text x="0" y="35" fontSize="24" fill="#0F0E47" fontWeight="bold">
+    <text x="-50" y="35" fontSize="24" fill="#0F0E47" fontWeight="bold">
       Bristol Myers Squibb™
     </text>
   </svg>
@@ -70,13 +73,13 @@ const philips = (
 
 const vodafone = (
   <svg
-    width="70"
+    width="170"
     height="50"
     viewBox="0 0 70 50"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle cx="25" cy="25" r="22" fill="#E60000" />
-    <text x="30" y="30" fontSize="20" fill="#E60000" fontWeight="bold">
+    <text x="15" y="30" fontSize="20" fill="#E60000" fontWeight="bold">
       Vodafone
     </text>
   </svg>
@@ -90,7 +93,7 @@ const nasa = (
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle cx="30" cy="30" r="28" fill="#0B3D91" />
-    <text x="15" y="35" fontSize="18" fill="white" fontWeight="bold">
+    <text x="7" y="35" fontSize="18" fill="white" fontWeight="bold">
       NASA
     </text>
   </svg>
@@ -98,12 +101,12 @@ const nasa = (
 
 const accenture = (
   <svg
-    width="110"
+    width="150"
     height="50"
     viewBox="0 0 110 50"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <text x="0" y="35" fontSize="24" fill="#6D0F49" fontWeight="bold">
+    <text x="-20" y="35" fontSize="24" fill="#6D0F49" fontWeight="bold">
       accenture
     </text>
     <polygon points="90,10 110,25 90,40" fill="#6D0F49" />

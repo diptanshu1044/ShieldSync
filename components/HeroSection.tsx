@@ -60,12 +60,12 @@ export const HeroSection = () => {
               Reduce storage and compute costs automatically — with N2WS
               Resource Control, storage-optimized archiving and ZeroEBS.
             </p>
-            <div className="mt-4 flex flex-col sm:flex-row gap-4">
-              <div className="bg-white text-black p-4 rounded-lg shadow">
+            <div className="mt-4 flex flex-col sm:flex-row gap-4 w-full">
+              <div className="bg-white text-black p-4 rounded-lg shadow flex justify-center flex-col items-center">
                 <p className="text-sm">Compute savings</p>
                 <p className="text-2xl font-bold">$1,248.75</p>
               </div>
-              <div className="bg-white text-black p-4 rounded-lg shadow">
+              <div className="bg-white text-black p-4 rounded-lg shadow flex justify-center flex-col items-center">
                 <p className="text-sm">Storage savings</p>
                 <p className="text-2xl font-bold">98%</p>
               </div>
@@ -81,11 +81,11 @@ export const HeroSection = () => {
               environment with N2WS, for complete peace of mind.
             </p>
             <div className="mt-4 p-2 bg-white text-black rounded-full shadow text-center">
-              <p className="font-semibold">
+              <p className="font-normal sm:font-semibold">
                 N2WS&apos; server belongs to you—it&apos;s not shared
               </p>
             </div>
-            <div className="mt-4 flex justify-center sm:justify-between gap-4">
+            <div className="mt-4 flex justify-center items-center sm:justify-between gap-4">
               <Logo1 />
               <Logo2 />
               <Logo3 />
@@ -103,10 +103,10 @@ export const HeroSection = () => {
                 accounts, regions, and clouds—in one console.
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
-                <span className="bg-white text-black px-3 py-1 rounded-full text-xs">
+                <span className="bg-white text-black px-3 py-1 rounded-full text-xs w-full">
                   Built for easy multi-tenancy
                 </span>
-                <span className="bg-white text-black px-3 py-1 rounded-full text-xs">
+                <span className="bg-white text-black px-3 py-1 rounded-full text-xs w-full">
                   Easy audit reports and API
                 </span>
               </div>
